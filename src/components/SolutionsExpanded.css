@@ -1,0 +1,250 @@
+.solutions_expanded {
+  padding: 120px 0 120px 0;
+  background: rgba(37, 37, 37, 0.6);
+  overflow: hidden;
+}
+
+.solutions_expanded_header {
+  color: #FFFFFF;
+  font-size: 72px;
+  padding-left: 11.5%;
+  margin-bottom: 52px;
+}
+
+.product_cards_pointers {
+  display: flex;
+  margin: 0;
+}
+
+.product_cards_right_pointer {
+  transform: scale(-1);
+  padding-right: 4vw;
+}
+
+.product_cards_left_pointer {
+  padding-left: 2vw;
+}
+
+.product_cards {
+  display: grid;
+  grid-column-gap: 2.75vw;
+  grid-auto-flow: column;
+  column-gap: 2.75vw;
+}
+
+.product_cards_first {
+  margin: 0;
+  transition: all 1s ease-out;
+  font-size: 24px;
+  color: black;
+  min-width: 40vw;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.36);
+  border-radius: 24px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1.5fr 1fr;
+  justify-content: flex-start;
+  height: 523px;
+}
+
+.product_cards * {
+  margin: 0;
+  font-weight: 500;
+}
+
+.product_cards li {
+  list-style-type: none;
+}
+
+.product_cards_first img {
+  width: 224px;
+  height: auto;
+  grid-column: 2;
+  grid-row: 1/5;
+}
+
+.product_cards_first_header {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.product_cards_first_description {
+  font-size: 24px;
+  align-self: center;
+}
+
+.product_cards_first_more {
+  align-self: flex-end;
+}
+
+.product_cards_first_more > svg {
+  margin: auto 0;
+  vertical-align: middle;
+}
+
+.product_cards_first_more span {
+  color: #5A97E5;
+  border-bottom: solid 2px #5A97E5;
+  cursor: pointer;
+  font-size: 24px;
+}
+.product_cards_first_more span a {
+  font-size: 24px;
+}
+
+.product_cards_first_list li {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.product_cards_second {
+  transition: all 1s ease-out;
+  animation-fill-mode: forwards;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.32);
+  border-radius: 24px;
+  height: 523px;
+  min-width: 40vw;
+  padding: 32px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  justify-content: flex-start;
+}
+
+.product_cards_second li {
+  margin-bottom: 24px;
+}
+
+.product_cards_second * {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product_cards_second_header {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.product_cards_second_description {
+  align-self: center;
+}
+
+.product_cards_second_call {
+  align-self: flex-end;
+}
+
+.product_cards_second_call span {
+  border-bottom: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.product_cards_pointers > svg {
+  cursor: pointer;
+}
+
+.product_cards_pointers > svg > path:hover {
+  fill: #5A97E5;
+}
+
+.previous-first {
+  position: static;
+}
+
+.next-first {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.next-second {
+  transform: translateX(-45vw);
+}
+
+.next-second.food-pieces_form {
+  transform: translateX(-55vw);
+}
+
+.next-second.food-pieces_client {
+  transform: translateX(-53vw);
+}
+
+.product_cards_second.next-second {
+  background-color: #303131;
+}
+
+.last {
+  transition: all 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 480px) {
+  .solutions_expanded_header {
+    font-size: 36px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .product_cards {
+    grid-auto-flow: row;
+    grid-row-gap: 24px;
+    justify-content: center;
+    margin-left: 2vw;
+  }
+
+  .product_cards_first img {
+    display: none;
+    max-height: 0;
+    grid-row: none;
+  }
+
+  .product_cards_first_header, .product_cards_second_header {
+    font-size: 44px;
+    margin-bottom: 24px;
+  }
+
+  .product_cards_first {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    height: 450px;
+  }
+
+  .product_cards_second {
+    height: 450px;
+  }
+
+  .product_cards_first, .product_cards_second {
+    padding: 24px 20px;
+    min-width: 80vw;
+    max-width: 80vw;
+  }
+
+  .last, .product_cards_pointers {
+    display: none;
+    max-height: 0;
+  }
+
+  .product_cards_first_description, .product_cards_second_description {
+    font-size: 18px;
+  }
+
+  .product_cards_first_list > li, .product_cards_second_list > li {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .product_cards_second_call > span, .product_cards_first_more > span > a {
+    font-size: 20px;
+  }
+
+  .product_cards_first_list {
+    margin-bottom: 36px;
+  }
+}
+
+/*# sourceMappingURL=SolutionsExpanded.css.map */

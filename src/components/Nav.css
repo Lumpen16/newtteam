@@ -1,0 +1,153 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  justify-content: space-between;
+  background: #ececec;
+  font-weight: 500;
+  height: 60px;
+  position: sticky;
+  z-index: 9999999;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.nav_logo {
+  height: 100%;
+  width: 100%;
+  justify-content: left;
+  margin-left: 34px;
+  vertical-align: middle;
+  margin-top: 0.9rem;
+}
+.nav_logo svg {
+  cursor: pointer;
+}
+
+.nav_contents {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  margin-top: 1.2rem;
+}
+
+.nav_callback {
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  margin-right: 34px;
+  margin-top: 1.2rem;
+  font-weight: 800;
+}
+
+.nav_callback_span {
+  border-bottom: solid 2px black;
+  margin-right: 34px;
+  cursor: pointer;
+}
+
+.nav_contents > div > span {
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.nav_contents > div > span:hover {
+  border-bottom: solid 2.5px black;
+  font-weight: 600;
+}
+
+.dp_menu_button {
+  display: none;
+}
+
+#modal-desk {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 37px;
+    top: 0;
+    z-index: 99999;
+    position: fixed;
+  }
+
+  .nav_logo {
+    margin-left: 18px;
+    margin-top: 8px;
+  }
+  .nav_logo svg {
+    height: 24.71px;
+    width: auto;
+    float: left;
+  }
+
+  .nav_contents {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 18px;
+    float: right;
+    justify-content: flex-end;
+    margin: 1.2rem 0.5rem 1.2rem 0;
+  }
+  .nav_contents div {
+    float: right;
+    margin: 0;
+  }
+  .nav_contents div span {
+    font-size: 24px;
+    display: inline-block;
+    float: right;
+  }
+  .nav_contents div span a {
+    font-size: 24px;
+  }
+
+  #modal-desk {
+    display: block;
+  }
+  #modal-desk span {
+    margin-right: 0;
+  }
+
+  .dp_menu {
+    transition: all 0.5s ease;
+    display: none;
+    left: 15%;
+    top: 5%;
+    position: fixed;
+    width: 80vw;
+    background: rgba(223, 223, 223, 0.6);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.36);
+    border-radius: 24px;
+    float: right;
+  }
+
+  .nav_callback {
+    display: none;
+  }
+
+  .dp_menu_button {
+    display: inline-block;
+    margin-left: 192px;
+  }
+}
+
+/*# sourceMappingURL=Nav.css.map */

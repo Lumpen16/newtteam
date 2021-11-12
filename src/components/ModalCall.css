@@ -1,0 +1,52 @@
+.modal {
+  background: #FFFFFF !important;
+  padding-top: 32px !important;
+  color: black !important;
+  position: relative !important;
+}
+
+.close_button {
+  justify-self: flex-end !important;
+  align-self: flex-end !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  height: 30px !important;
+  width: 30px !important;
+  background: rgba(223, 223, 223, 0.6) !important;
+  border-radius: 14.8571px !important;
+  cursor: pointer;
+}
+.close_button:hover {
+  background-color: rgba(223, 223, 223, 0.9) !important;
+}
+
+.modal-call {
+  position: fixed !important;
+  z-index: 55 !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: scale(0) !important;
+  background: rgba(37, 37, 37, 0.6) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.modal-call-active {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 400px) {
+  .modal * {
+    float: none !important;
+  }
+}
+
+/*# sourceMappingURL=ModalCall.css.map */

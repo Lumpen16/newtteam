@@ -1,0 +1,64 @@
+img {
+  margin: 0;
+}
+
+.hiw {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.hiw_container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: flex-start;
+  grid-gap: 55px;
+}
+
+.hiw_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto 0;
+}
+
+.hiw_header {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.hiw_list > li {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hiw_list {
+  list-style-type: none;
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .hiw {
+    padding: 46px 2vw 63px 2vw;
+    grid-template-columns: none;
+  }
+  .hiw img {
+    margin-left: 4vw;
+  }
+
+  .hiw_header {
+    font-size: 36px;
+  }
+
+  .hiw_list > li {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=HIW.css.map */

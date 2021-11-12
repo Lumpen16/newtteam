@@ -1,0 +1,58 @@
+.food-platforms
+  background-color: #FFFFFF
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 300px
+  padding-bottom: 300px
+
+.food-platforms_wrapper
+  margin: 0 14vw
+  padding: 36px
+  background: rgba(223, 223, 223, 0.6)
+  //backdrop-filter: blur(54px)
+  border-radius: 24px
+
+.food-platforms_wrapper_header
+  font-size: 72px
+  font-weight: 700
+  margin-bottom: 64px
+
+.food-platforms_wrapper_list li
+  list-style-type: none
+  font-size: 36px
+  font-weight: 600
+  margin-bottom: 18px
+
+.food-platforms_wrapper_list p
+  font-size: 24px
+  font-weight: 500
+
+.food-platforms_wrapper_list
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 20px
+  grid-row-gap: 52px
+
+@media (max-width: 400px)
+  .food-platforms
+    padding: 72px 0
+  .food-platforms_wrapper
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+
+    margin: 0 18px
+    padding: 24px 20px
+
+  .food-platforms_wrapper_header
+    font-size: 36px
+    margin-bottom: 36px
+  .food-platforms_wrapper_list
+    display: flex
+    flex-direction: column
+    row-gap: 24px
+    li
+      font-size: 24px
+    p
+      font-size: 18px

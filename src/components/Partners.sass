@@ -1,0 +1,39 @@
+.partners
+  background: rgba(37, 37, 37, 0.6)
+  backdrop-filter: blur(55px)
+  padding-top: 121px
+  padding-bottom: 236px
+  display: grid
+  overflow-x: hidden
+  h1
+    font-size: 72px
+    padding-left: 9.5%
+    margin: 0
+    color: #FFFFFF
+    margin-bottom: 50px
+
+  .partners_carousel
+    display: grid
+    grid-auto-flow: column
+    grid-column-gap: 2.5vw
+
+  .carousel_item
+    background: #FFFFFF
+    border-radius: 24px
+    transition: all 0.3s ease
+    height: 190px
+    padding: 0 35px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    &:hover
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.36)
+
+  .next_item
+    transform: translate(-25vw)
+
+  .first_item.next_item
+    transform: scale(0.8)
+    opacity: 0
+

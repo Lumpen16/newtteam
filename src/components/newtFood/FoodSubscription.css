@@ -1,0 +1,58 @@
+.food-sub {
+  background: rgba(37, 37, 37, 0.6);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 3vw;
+  justify-content: center;
+  align-items: center;
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
+.food-sub img {
+  justify-self: flex-end;
+}
+
+.food-sub_description {
+  justify-content: flex-start;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.food-sub_description h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+.food-sub_description ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+.food-sub_description ul li {
+  list-style-type: none;
+  margin: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 400px) {
+  .food-sub {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 85px 18px;
+  }
+  .food-sub img {
+    display: none;
+  }
+
+  .food-sub_description h1 {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+  .food-sub_description ul {
+    grid-row-gap: 24px;
+  }
+}
+
+/*# sourceMappingURL=FoodSubscription.css.map */

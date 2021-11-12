@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
+import Nav from './components/Nav';
+import Main from './components/Main';
+import NewtFood from './components/newtFood/NewtFood'
+import Footer from './components/Footer';
+import NotFound from './components/NotFound'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component{
+  render() {
+    return (
+        <div>
+            <BrowserRouter>
+                <Nav />
+                <Switch>
+                    <Route exact path="/">
+                        <Main />
+                    </Route>
+                    <Route exact path="/newtFood">
+                        <NewtFood />
+                    </Route>
+                    <Route path="" component={NotFound} />
+                </Switch>
+                {/*<Route exact path="/" component={Main} />*/}
+                <Footer />
+            </BrowserRouter>
+
+        </div >
+    )
+  }
 }
+
 
 export default App;
